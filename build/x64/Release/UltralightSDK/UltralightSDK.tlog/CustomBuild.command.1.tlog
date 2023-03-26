@@ -1,0 +1,136 @@
+^C:\USERS\AIDAN\DOCUMENTS\ULTRALIGHT-QUICK-START\BUILD\CMAKEFILES\B91C5129ACAA5DC20AF0666B4C954996\ULTRALIGHTSDK-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Release -P C:/Users/Aidan/Documents/ultralight-quick-start/build/UltralightSDK-prefix/tmp/UltralightSDK-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Aidan/Documents/ultralight-quick-start/build/UltralightSDK-prefix/src/UltralightSDK-stamp/Release/UltralightSDK-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\AIDAN\DOCUMENTS\ULTRALIGHT-QUICK-START\BUILD\CMAKEFILES\B91C5129ACAA5DC20AF0666B4C954996\ULTRALIGHTSDK-DOWNLOAD.RULE
+setlocal
+cd C:\Users\Aidan\Documents\ultralight-quick-start\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/Aidan/Documents/ultralight-quick-start/build/UltralightSDK-prefix/src/UltralightSDK-stamp/download-UltralightSDK.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/Aidan/Documents/ultralight-quick-start/build/UltralightSDK-prefix/src/UltralightSDK-stamp/verify-UltralightSDK.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/Aidan/Documents/ultralight-quick-start/build/UltralightSDK-prefix/src/UltralightSDK-stamp/extract-UltralightSDK.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Aidan/Documents/ultralight-quick-start/build/UltralightSDK-prefix/src/UltralightSDK-stamp/Release/UltralightSDK-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\AIDAN\DOCUMENTS\ULTRALIGHT-QUICK-START\BUILD\CMAKEFILES\B91C5129ACAA5DC20AF0666B4C954996\ULTRALIGHTSDK-UPDATE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Aidan/Documents/ultralight-quick-start/build/UltralightSDK-prefix/src/UltralightSDK-stamp/Release/UltralightSDK-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\AIDAN\DOCUMENTS\ULTRALIGHT-QUICK-START\BUILD\CMAKEFILES\B91C5129ACAA5DC20AF0666B4C954996\ULTRALIGHTSDK-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Aidan/Documents/ultralight-quick-start/build/UltralightSDK-prefix/src/UltralightSDK-stamp/Release/UltralightSDK-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\AIDAN\DOCUMENTS\ULTRALIGHT-QUICK-START\BUILD\CMAKEFILES\B91C5129ACAA5DC20AF0666B4C954996\ULTRALIGHTSDK-CONFIGURE.RULE
+setlocal
+cd C:\Users\Aidan\Documents\ultralight-quick-start\build\SDK
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Aidan/Documents/ultralight-quick-start/build/UltralightSDK-prefix/src/UltralightSDK-stamp/Release/UltralightSDK-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\AIDAN\DOCUMENTS\ULTRALIGHT-QUICK-START\BUILD\CMAKEFILES\B91C5129ACAA5DC20AF0666B4C954996\ULTRALIGHTSDK-BUILD.RULE
+setlocal
+cd C:\Users\Aidan\Documents\ultralight-quick-start\build\SDK
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Aidan/Documents/ultralight-quick-start/build/UltralightSDK-prefix/src/UltralightSDK-stamp/Release/UltralightSDK-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\AIDAN\DOCUMENTS\ULTRALIGHT-QUICK-START\BUILD\CMAKEFILES\B91C5129ACAA5DC20AF0666B4C954996\ULTRALIGHTSDK-INSTALL.RULE
+setlocal
+cd C:\Users\Aidan\Documents\ultralight-quick-start\build\SDK
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Aidan/Documents/ultralight-quick-start/build/UltralightSDK-prefix/src/UltralightSDK-stamp/Release/UltralightSDK-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\AIDAN\DOCUMENTS\ULTRALIGHT-QUICK-START\BUILD\CMAKEFILES\37A88A9DEEE7831D3D17CB10E7CBDC48\ULTRALIGHTSDK-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/Aidan/Documents/ultralight-quick-start/build/CMakeFiles/Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Aidan/Documents/ultralight-quick-start/build/CMakeFiles/Release/UltralightSDK-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Aidan/Documents/ultralight-quick-start/build/UltralightSDK-prefix/src/UltralightSDK-stamp/Release/UltralightSDK-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\AIDAN\DOCUMENTS\ULTRALIGHT-QUICK-START\BUILD\CMAKEFILES\F70AFFAD9E793F2BEAD436D4616374FE\ULTRALIGHTSDK.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\AIDAN\DOCUMENTS\ULTRALIGHT-QUICK-START\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Aidan/Documents/ultralight-quick-start -BC:/Users/Aidan/Documents/ultralight-quick-start/build --check-stamp-file C:/Users/Aidan/Documents/ultralight-quick-start/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

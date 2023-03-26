@@ -1,0 +1,10 @@
+^C:\USERS\AIDAN\DOCUMENTS\ULTRALIGHT-QUICK-START\BUILD\CMAKEFILES\F70AFFAD9E793F2BEAD436D4616374FE\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Aidan/Documents/ultralight-quick-start -BC:/Users/Aidan/Documents/ultralight-quick-start/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Aidan/Documents/ultralight-quick-start/build/MyApp.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

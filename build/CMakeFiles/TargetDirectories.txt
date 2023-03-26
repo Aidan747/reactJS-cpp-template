@@ -1,0 +1,4 @@
+C:/Users/Aidan/Documents/ultralight-quick-start/build/CMakeFiles/UltralightSDK.dir
+C:/Users/Aidan/Documents/ultralight-quick-start/build/CMakeFiles/MyApp.dir
+C:/Users/Aidan/Documents/ultralight-quick-start/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Aidan/Documents/ultralight-quick-start/build/CMakeFiles/ZERO_CHECK.dir
